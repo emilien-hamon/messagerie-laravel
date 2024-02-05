@@ -26,11 +26,7 @@
 
                     @csrf
 
-                    <div class="form-group mx-sm-3 ">
 
-                        <input type="text" class="form-control" name="name" id="name" required minlength="2"
-                            maxlength="50" placeholder="Pseudonyme">
-                    </div>
 
                     <div class="form-group mx-sm-3 ">
 

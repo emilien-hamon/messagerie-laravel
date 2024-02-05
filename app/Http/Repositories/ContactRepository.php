@@ -11,7 +11,7 @@ class ContactRepository
     public function store($request)
     {
         $contact = new Contact();
-        $contact->name = $request->name;
+        $contact->name = $request->user()->name ;
         $contact->message = $request->message;
 
         $contact->save();
