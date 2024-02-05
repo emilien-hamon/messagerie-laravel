@@ -82,7 +82,7 @@
                 e.preventDefault();
             }
         });
-        var toolbarOptions = ['bold', 'italic', 'underline', 'strike',{'color':[]}];
+        var toolbarOptions = ['bold', 'italic', 'underline', 'strike',{'color':[]},'link', 'image',];
         // Initialiser l'éditeur Quill
         var quill = new Quill('#editor', {
             theme: 'snow',
