@@ -1,0 +1,6 @@
+projectKey=messagerie
+serverUrl=http://localhost:32768
+serverVersion=9.9.0.65466
+dashboardUrl=http://localhost:32768/dashboard?id=messagerie
+ceTaskId=AYwA2FvfE_Hziaf3RHnn
+ceTaskUrl=http://localhost:32768/api/ce/task?id=AYwA2FvfE_Hziaf3RHnn
