@@ -46,6 +46,7 @@
     <!-- Script JavaScript -->
     <script>
         // Fonction pour charger le contenu HTML
+
         function loadHTML() {
             var xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function() {
@@ -81,10 +82,11 @@
                 e.preventDefault();
             }
         });
-
+        var toolbarOptions = ['bold', 'italic', 'underline', 'strike',{'color':[]}];
         // Initialiser l'éditeur Quill
         var quill = new Quill('#editor', {
-            theme: 'snow'
+            theme: 'snow',
+            modules: {toolbar:toolbarOptions}
         });
 
         // Gérer la soumission du formulaire avec le contenu de l'éditeur Quill
@@ -94,5 +96,6 @@
             document.getElementById('message').value = editorContent;
             this.submit();
         });
+
     </script>
 @endsection
