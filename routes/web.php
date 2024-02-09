@@ -19,7 +19,7 @@ use App\Http\Controllers\ContactController;
 // });
 
 // Route::get('/dashboard', function () {
-//     return view('dashboard');
+//
 // })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
@@ -34,7 +34,6 @@ Route::middleware('auth')->group(function () {
     Route::get('/api', function () {
         return view('api');
     });
-
 });
 
 require __DIR__.'/auth.php';

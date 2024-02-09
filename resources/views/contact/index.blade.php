@@ -17,7 +17,7 @@
         }
 
         #htmlContent {
-            height: 65vh;
+            height: 60vh;
             overflow-y: auto;
             border: 1px solid #ddd;
         }
@@ -34,7 +34,7 @@
             <form action="{{ route('contact.store') }}" method="post" id="monFormulaire" class="form-inline">
                 @csrf
                 <!-- Éditeur Quill -->
-                <div id="editor" style="height: 200px;"></div>
+                <div id="editor" style="height: 50px;" class="mb-2"></div>
                 <!-- Champ caché pour stocker le contenu de l'éditeur -->
                 <input type="hidden" id="message" name="message">
                 <!-- Bouton d'envoi -->
